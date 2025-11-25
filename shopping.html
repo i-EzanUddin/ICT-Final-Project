@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .img{
+            display: flex;
+            flex-direction: column;
+            margin: 2% 0 0 5%;
+        }
+        img{
+            border: 2px solid white;
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            box-shadow: 5000px black;
+        }
+       .img1,.img2,.img3,.img4 {
+         width: 70%;
+        padding: 20px;
+        background-color: white;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+        border-radius: 10px;
+}
+
+.d1,.d2,.d3,.d4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;           
+    gap: 12px;                        
+}
+
+.d1 p,.d2 p,.d3 p,.d4 p{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 300px;
+    text-decoration: underline;
+}
+
+
+.d1 button,.d2 button,.d3 button,.d4 button{
+    width: 140px;
+    height: 42px;
+    border: none;
+    background-color: #6F4E37;  
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.d1 button:hover,.d2 button:hover,.d3 button:hover,.d4 button:hover{
+    background-color: #5b3f2d;
+    border: 5px solid black;
+    transition: 1s all;
+}
+
+span{
+    font-size: 26px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 130px;
+}
+.parent a{
+    padding: 10px 25px;
+    position:fixed;
+    bottom: 3%;
+    left: 80%;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 5%;
+    background-color: #5b3f2d;
+}
+a:hover{
+    transition: 1s all;
+    color: white;
+    border: 1px solid white;
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="img">
+            <div class="img1">
+                <img src="https://orders.espresso.pk/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1661946701-Macciato.jpg%3Fq%3D10&w=640&q=75" alt="espresso">
+                <div class="d1">
+                    <p><i>Espresso</i></p>
+                    <button id="btn1" onclick="inc1()">Add to cart</button>
+                    <span id="1">0</span>
+                    <button id="r1" style="font-size:14px;" onclick="dec1()">Remove from cart</button>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="https://orders.espresso.pk/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1659005462-57..-.jpg%3Fq%3D10&w=640&q=75" alt="cappucccino">
+                <div class="d2">
+                    <p><i>Cappuccino</i></p>
+                    <button id="btn2" onclick="inc2()">Add to cart</button>
+                    <span id="2">0</span>
+                    <button id="r2" style="font-size:14px;"onclick="dec2()">Remove from cart</button>
+                </div>
+            </div>
+            <a href="checkout.html" class="anchor" id="checkout" onclick="sum()">Check out</a>
+            <div class="img3">
+                <img src="https://orders.espresso.pk/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1659005430-58..-.jpg%3Fq%3D10&w=640&q=75" alt="Cafe latte">
+                <div class="d3">
+                    <p><i>Cafe latte</i></p>
+                    <button id="btn3" onclick="inc3()">Add to cart</button>
+                    <span id="3">0</span>
+                    <button id="r3" style="font-size:14px;" onclick="dec3()">Remove from cart</button>
+                </div>
+            </div>
+            <div class="img4"><img src="https://orders.espresso.pk/_next/image?url=https%3A%2F%2Fassets.indolj.io%2Fupload%2F1661946546-Iced%20Latte.jpg%3Fq%3D10&w=640&q=75" alt="Iced Coffee">
+                <div class="d4">
+                <p><i>Iced Coffee</i></p>
+                <button id="btn4" onclick="inc4()">Add to cart</button>
+                <span id="4">0</span>
+                <button id="r4" style="font-size:14px;" onclick="dec4()">Remove from cart</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

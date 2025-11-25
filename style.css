@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+span{
+    color: rgb(204, 132, 67);
+}
+.parent{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 109vh;
+    /* background-color: black; */
+}
+.parent img{
+    object-fit: cover;
+    width: 100%;
+    height: 155vh;
+    filter: brightness(30%);
+    margin-top: 14.3%;
+
+}
+.child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.child p{
+    color: white;
+}
+/* color for matching : rgb(198, 156, 109),rgb(204, 132, 67);rgb(111, 78, 55) */
+.nav{
+    /* background-color: rgb(111, 78, 55); */
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* margin-right: 350px; */
+    column-gap: 120px;
+    /* background-color: white; */
+    /* color: black; */
+}
+.nav a{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.head{
+    /* border-top: 1px solid black; */
+    height: 625px;
+    padding: 20px; 
+    padding-top: 50px;
+    margin-top: -2%;
+}
+.head header h1{
+    font-size: 60px;
+    color: white;
+    padding-bottom: 50px;
+    margin-left: 20px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.head header p{
+    font-size: 27px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    color: rgb(204, 132, 67);
+}
+#home p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    margin-left: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.con{
+    border-top: 0.5px solid rgb(75, 54, 33);
+}
+.con h2{
+    text-align: center;
+    color: rgb(204, 132, 67);
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+#contact{
+    display: flex;
+    justify-content: space-evenly;
+    color: #F5EBDC;
+    margin-bottom: 40px;
+}
+a:hover{
+    /* color: rgb(248, 121, 9); */
+    color: rgb(253, 111, 9);
+    transition: all 0.5s;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;       
+    width: 140px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: rgb(214, 212, 212);
+    background-color: rgba(0, 0, 0, 0.01); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    backdrop-filter: blur(2px); 
+    cursor: pointer;
+    font-size: large;
+}
+.shop{
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.btn:hover{
+    transition: 1s all;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid white;
+    color: white;
+}

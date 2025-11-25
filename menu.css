@@ -1,0 +1,44 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+i{
+    font-size: 30px;
+    margin-bottom: 50px;
+    /* width: 100%; */
+    text-align: center;
+}
+span{
+    color: rgb(204, 132, 67);
+    text-decoration: underline;
+}
+.parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+img{
+    width: 100%;
+    height: 110vh;
+}
+aside{
+    background-color: black;
+    height: 110vh;
+    width: 30%;
+    color: white;
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 0%;
+}
+li{
+    margin: 10% 0;
+    color: rgb(255, 255, 255);
+}
+/* color for comobo : rgb(198, 156, 109),rgb(204, 132, 67);rgb(111, 78, 55) */
